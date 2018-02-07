@@ -1,0 +1,1 @@
+Simple application for bookmarking webistes. This app uses JavaScript and localStorage for storing bookmarks
