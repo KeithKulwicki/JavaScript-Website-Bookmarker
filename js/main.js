@@ -31,9 +31,11 @@ function saveBookmark(e) {
     // Add to array
     bookmarks.push(bookmark);
     // Set to localStorage
+    // JSON.stringify converts a JavaScript value to a JSON string.
     localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
   } else {
     // Get bookmarks from localStorage
+    // JSON.parse converts a JSON string into an object.
     var bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
     // Add bookmark to array
     bookmarks.push(bookmark);
